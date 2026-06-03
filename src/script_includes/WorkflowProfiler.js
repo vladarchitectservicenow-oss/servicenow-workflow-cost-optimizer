@@ -1,8 +1,10 @@
-/**
- * WorkflowProfiler — Profiles catalog items and incident categories
- * by channel affinity, volume, complexity, data sensitivity.
- * @class WorkflowProfiler @namespace x_snc_wco
- */
+// ServiceNow Workflow Cost Optimizer — WorkflowProfiler
+// Copyright (C) 2026 Vladimir Kapustin
+// SPDX-License-Identifier: AGPL-3.0
+//
+// Profiles catalog items and incident categories
+// by channel affinity, volume, complexity, data sensitivity.
+// @class WorkflowProfiler @namespace x_snc_wco
 var WorkflowProfiler = Class.create();
 WorkflowProfiler.prototype = {
     initialize: function(runId) { this.runId = runId || null; },

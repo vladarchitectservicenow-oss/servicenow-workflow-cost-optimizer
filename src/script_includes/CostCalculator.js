@@ -1,8 +1,10 @@
-/**
- * CostCalculator — Computes per-workflow cost across AI platforms.
- * Pricing models are configurable via x_snc_wco_pricing table.
- * @class CostCalculator @namespace x_snc_wco
- */
+// ServiceNow Workflow Cost Optimizer — CostCalculator
+// Copyright (C) 2026 Vladimir Kapustin
+// SPDX-License-Identifier: AGPL-3.0
+//
+// Computes per-workflow cost across AI platforms.
+// Pricing models are configurable via x_snc_wco_pricing table.
+// @class CostCalculator @namespace x_snc_wco
 var CostCalculator = Class.create();
 CostCalculator.prototype = {
     calculateForWorkflow: function(profileId) {

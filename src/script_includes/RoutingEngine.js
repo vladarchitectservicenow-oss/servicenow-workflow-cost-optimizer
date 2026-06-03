@@ -1,8 +1,10 @@
-/**
- * RoutingEngine — Generates optimal AI platform routing map.
- * Uses constraint-satisfaction: compliance (hard), latency (soft), budget (hard).
- * @class RoutingEngine @namespace x_snc_wco
- */
+// ServiceNow Workflow Cost Optimizer — RoutingEngine
+// Copyright (C) 2026 Vladimir Kapustin
+// SPDX-License-Identifier: AGPL-3.0
+//
+// Generates optimal AI platform routing map.
+// Uses constraint-satisfaction: compliance (hard), latency (soft), budget (hard).
+// @class RoutingEngine @namespace x_snc_wco
 var RoutingEngine = Class.create();
 RoutingEngine.prototype = {
     initialize: function() { this.calculator = new x_snc_wco.CostCalculator(); },
